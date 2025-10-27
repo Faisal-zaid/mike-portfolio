@@ -1,0 +1,84 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  height: 400px;
+  background-color: royalblue; 
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 0 40px;
+  border-radius: 30px;
+}
+
+/* Text section */
+.text-section {
+  max-width: 420px;
+  padding-top: 210px;
+}
+
+/* Typing animation for h1 */
+.typing {
+  font-size: 2rem;
+  font-weight: bold;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+}
+
+/* Fade in for h2 and p */
+.text-section h2 {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 3.2s;
+}
+
+.text-section p {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #ddd;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 3.8s;
+}
+
+/* Image section */
+.photo img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px whitesmoke;
+  border: 3px solid transparent;
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+  border-color: royalblue;
+}
+
+/* Keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
