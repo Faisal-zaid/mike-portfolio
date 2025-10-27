@@ -12,7 +12,7 @@ export default function Home({ home }) {
 
       <div className="photo">
         <img
-          src="src/photo/WhatsApp Image 2025-10-27 at 16.11.11.jpeg"
+          src="public/photo/WhatsApp Image 2025-10-27 at 16.11.11.jpeg"
           alt="CEO of MBCA"
         />
       </div>
