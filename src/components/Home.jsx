@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import ceoPhoto from "../photo/ceo.jpeg"
 
 export default function Home({ home, img}) {
   return (
@@ -12,7 +13,7 @@ export default function Home({ home, img}) {
 
       <div className="photo">
         <img
-          src={img.image}
+          src={ceoPhoto}
           alt="CEO of MBCA"
         />
       </div>
