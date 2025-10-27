@@ -1,55 +1,31 @@
+/* Reset and global layout */
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Responsive utility classes */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-
+/* Main layout container (shared base) */
 .main {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  border-radius: 30px;
 }
 
-/* 🧠 When the screen width is 768px or less (phones) */
+/* 🧠 Responsive rules for all sections */
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
@@ -57,15 +33,9 @@
     text-align: center;
   }
 
-  img {
+  .main img {
     width: 80%;
-    height: auto;
+    max-width: 300px;
     margin-top: 20px;
   }
-
-  .diamond, .normal {
-    width: 90%;
-    margin: 0 auto;
-  }
 }
-

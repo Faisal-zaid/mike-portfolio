@@ -1,23 +1,18 @@
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  height: 400px;
-  background-color: royalblue; 
+  background-color: royalblue;
   color: white;
-  font-family: "Poppins", sans-serif;
-  padding: 0 40px;
+  padding: 40px;
   border-radius: 30px;
+  flex-wrap: wrap;
 }
 
-/* Text section */
 .text-section {
   max-width: 420px;
-  padding-top: 210px;
+  padding: 0;
+  text-align: left;
 }
 
-/* Typing animation for h1 */
+/* Typing animation */
 .typing {
   font-size: 2rem;
   font-weight: bold;
@@ -28,7 +23,6 @@
   animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
 }
 
-/* Fade in for h2 and p */
 .text-section h2 {
   font-size: 1.3rem;
   margin-top: 10px;
@@ -46,10 +40,9 @@
   animation-delay: 3.8s;
 }
 
-/* Image section */
 .photo img {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   box-shadow: 0 10px 25px whitesmoke;
   border: 3px solid transparent;
@@ -58,27 +51,39 @@
 
 .photo img:hover {
   transform: scale(1.05);
-  border-color: royalblue;
+  border-color: white;
 }
 
-/* Keyframes */
+/* Animations */
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  from { width: 0; }
+  to { width: 100%; }
 }
-
 @keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+  50% { border-color: transparent; }
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
+/* 📱 Mobile adjustments */
+@media (max-width: 768px) {
+  .text-section {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .typing {
+    font-size: 1.5rem;
+  }
+
+  .text-section h2 {
+    font-size: 1rem;
+  }
+
+  .photo img {
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
   }
 }

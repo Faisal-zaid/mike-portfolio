@@ -1,11 +1,11 @@
 .services {
-  height: 400px;
+  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   color: black;
-  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
 }
 
 .services ul {
@@ -22,7 +22,6 @@
   animation: popUp 0.7s ease-out forwards;
 }
 
-/* Pop-in animation */
 @keyframes popUp {
   0% {
     opacity: 0;
@@ -38,9 +37,15 @@
   }
 }
 
-/* Optional hover pop effect */
 .services li:hover {
   transform: scale(1.1);
-  color: #ffda79;
+  color: royalblue;
   transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .services li {
+    font-size: 1.1rem;
+  }
 }
