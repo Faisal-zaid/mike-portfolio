@@ -4,6 +4,9 @@ const data = {
     title: "MBCA CONSULTANCY AGENCY",
     tagline: "Growing sustainable farms and empowering local farmers.",
   },
+  image:{
+    image:"public/photo/WhatsApp Image 2025-10-27 at 16.11.11.jpeg"
+  },
   about: {
     description:
       "I am a professional agricultural consultant with relevant knowledge helping farmers improve productivity, adopt modern farming techniques, and manage agribusiness operations efficiently.",

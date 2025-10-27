@@ -8,7 +8,7 @@ import data from './components/data/data'
 function App() {
   return (
     <div>
-      <Home home={data.hero} />
+      <Home home={data.hero} img={data.image}/>
        <About about={data.about} /> 
        <Services services={data.services} />
        <Footer contact={data.contact} /> 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 
-export default function Home({ home }) {
+export default function Home({ home, img}) {
   return (
     <div className="main">
       <div className="text-section">
@@ -12,7 +12,7 @@ export default function Home({ home }) {
 
       <div className="photo">
         <img
-          src="public/photo/WhatsApp Image 2025-10-27 at 16.11.11.jpeg"
+          src={img.image}
           alt="CEO of MBCA"
         />
       </div>
